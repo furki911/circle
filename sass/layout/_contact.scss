@@ -1,0 +1,145 @@
+.contact {
+
+   background-color: $color-primary;
+
+   &__container {
+      @include container;
+      padding: 4rem 0;
+   }
+
+   &__heading {
+      text-align: center;
+      margin: 4rem 0;
+      text-transform: uppercase;
+      letter-spacing: -.5rem;
+      font-weight: 900;
+   }
+
+   &__body {
+      display: flex;
+
+      @media only screen and (max-width: $bp-large) {
+         flex-direction: column;
+      }
+   }
+
+   &__details {
+      flex-basis: 50%;
+      padding: 0 10rem;
+
+      @media only screen and (max-width: $bp-smaller) {
+         padding: 0 5rem;
+      }
+   }
+
+   &__item {
+      padding: 2rem 0;
+
+      &:not(:last-of-type) {
+         border-bottom: 3px dotted #000;
+      }
+   }
+
+   &__type {
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: -.1rem;
+      margin: 1.5rem 0;
+      margin-top: .75rem;
+   }
+
+   &__value {
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 1.2;
+   }
+
+   &__form {
+      flex-basis: 50%;
+
+      @media only screen and (max-width: $bp-large) {
+         padding: 5rem 10rem;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+         padding: 5rem;
+      }
+
+      @media only screen and (max-width: $bp-smaller) {
+         padding: 5rem 2rem;
+      }
+
+      form {
+         @media only screen and (max-width: $bp-large) {
+            padding: 5rem;
+            border-top: 3px dotted $color-white;
+         }
+
+         @media only screen and (max-width: $bp-big) {
+            padding: 5rem 0;
+         }
+      }
+      
+   }
+
+   .form__group {
+      display: flex;
+      justify-content: space-between;
+
+      @media only screen and (max-width: $bp-medium) {
+         flex-direction: column;
+      }   
+      
+      &:not(:first-child) {
+         margin: 2rem 0;  
+
+         @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+            margin: 0;
+         }   
+      }
+
+      input {
+         background-color: #000;
+         border: none;
+         border-radius: 100px;
+         padding: 1.5rem 2rem;
+         flex-basis: 48%;   
+      }
+
+      textarea {
+         width: 100%;
+         background-color: #000;
+         resize: none;
+         border-radius: 2rem;
+         padding: 1.5rem 2rem;
+
+         @media only screen and (max-width: $bp-medium) {
+            margin-bottom: 2rem;
+         }
+      }
+
+      input, textarea {
+         color: $color-white;
+         font-family: 'Noto Sans SC', sans-serif;
+         transition: all 1s;
+         border: 3px solid $color-primary;
+         font-size: 1.4rem;
+         font-weight: 600;
+         @media only screen and (max-width: $bp-medium) {
+            margin: 1rem 0;
+         }
+
+         &:focus {
+            border: 3px solid #fff;
+            outline: none;
+         }
+      }
+
+      button {
+         @media only screen and (max-width: $bp-medium) {
+            align-self: center;
+         }
+      }
+   }
+}

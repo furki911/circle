@@ -1,0 +1,113 @@
+.card {
+   background-color: #000;
+   position: relative;
+   padding: 3rem;
+   margin: 3rem auto;
+   text-align: left;
+   flex-basis: 30rem;
+
+   @media only screen and (max-width: $bp-larger) {
+      flex-basis: 26rem;
+      padding: 2rem;
+      margin: 3rem 1rem;
+   }
+
+   @media only screen and (max-width: $bp-large) {
+      flex-basis: 80%;
+   }
+
+   &__double-quote {
+      position: absolute;
+      right: 2%;
+      top: 0;
+      
+      font-size: 15rem;
+      letter-spacing: 0;
+      color: $color-primary;
+      font-family: Arial, Helvetica, sans-serif;
+
+      @media only screen and (max-width: $bp-larger) {
+         font-size: 10rem;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+         font-size: 20rem;
+         transform: translateY(-10%);
+         right: 1%;
+      }
+
+      @media only screen and (max-width: $bp-smaller) {
+         font-size: 16rem;
+      }
+
+      &::before { 
+         content:'\201D';
+         line-height: 0;
+      }
+
+   }
+
+   &__top {
+      display: flex;
+      align-items: center;
+      margin: 2rem 0;
+   }
+
+   &__img {
+      width: 6.5rem;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 2rem;
+
+      @media only screen and (max-width: $bp-larger) {
+         margin-right: 1rem;
+      }
+
+      img {
+         width: 100%;
+         height: 100%;
+         transform: scale(1.2) translateY(.5rem);
+      }
+   }
+
+   &__name {
+      @media only screen and (max-width: $bp-larger) {
+         font-size: 1.8rem;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+         font-size: 2rem;
+      }
+   }
+
+   &__profession {
+      font-weight: 400;
+      font-size: 1.4rem;
+   }
+
+   &__paragraph {
+      font-size: 1.4rem;
+      color: $color-grey-light-1;
+      line-height: 1.8;
+   }
+
+   &__rating {
+      display: flex;
+      margin: 2rem 0;
+      margin-top: 3rem;
+
+      svg {
+         width: 2.5rem;
+         height: 2.5rem;
+         fill: $color-primary;
+
+         &:not(:last-child) {
+            margin-right: .5rem;
+         }
+      }
+
+      &--unfilled-star {
+         fill: #fff !important;
+      }
+   }
+}

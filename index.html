@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style/style.css">
+      <link rel="shortcut icon" type="image/png" href="img/logo.png">
+   </head>
+   <body>
+
+      <!-- Top Navbar -->
+
+      <!-- Responsive Button -->
+      <span onclick="clicked()" class="navbar__links--item"><button class="btnn"><div class="navbar__links--item--btn"></div></button></span>
+      
+      <nav class="navbar">
+         <div class="navbar__logo">
+            <div class="navbar__logo__img">
+               <img src="img/logo.png" alt="logo">
+            </div>            
+         </div>
+
+
+         <ul class="navbar__links">
+            <li class="navbar__links--item active"><a href="#">Home</a></li>
+            <li class="navbar__links--item"><a href="#">Page</a></li>
+            <li class="navbar__links--item"><a href="#">Portfolio</a></li>
+            <li class="navbar__links--item"><a href="#">Blog</a></li>
+            <li class="navbar__links--item"><a href="#">Contact Us</a></li>
+         </ul>
+         </nav>
+
+      <!-- Showcase And Image Slider -->
+      <section class="showcase">
+         <div class="slider-container">  
+            <div class="showSlide fade">  
+                <img src="img/image-1.png"/>
+            </div>  
+            <div class="showSlide fade">  
+                <img src="img/image-2.jpg"/>  
+            </div>  
+      
+            <div class="showSlide fade">  
+                <img src="img/image-3.png"/> 
+            </div>  
+            <div class="showSlide fade">  
+                <img src="img/image-4.png"/> 
+            </div>  
+            <!-- Navigation arrows -->  
+            <a class="left" onclick="nextSlide(-1)">❮</a>  
+            <a class="right" onclick="nextSlide(1)">❯</a>  
+        </div>  
+      </section>
+
+      <section class="services">
+         <div class="services__top">
+            <h3 class="services__heading">You Dream. <span>We Design.</span></h3>
+            <p class="services__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia rem voluptas facilis dolores perferendis earum, perspiciatis nobis? Quae rerum molestias porro sint. Veritatis velit nesciunt nihil voluptatibus magnam et sint beatae unde, neque aliquid sapiente pariatur possimus, soluta non necessitatibus.</p>
+         </div>
+
+         <div class="services__bottom">
+            <div class="services__bottom__container">
+               <div class="services__bottom__card">
+                  <div class="services__bottom__card--img">
+                     <img src="img/card-1.png" alt="card-1-img">
+                  </div>
+                  <h5 class="services__bottom__card--heading">
+                     Branding 
+                  </h5>
+                  <p class="services__bottom__card--paragraph">
+                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum tempore labore aperiam et quae veniam dolore minus, obcaecati accusantium sint!
+                  </p>
+               </div>
+
+               <div class="services__bottom__card">
+                  <div class="services__bottom__card--img">
+                     <img src="img/card-2.png" alt="card-2">
+                  </div>
+                  <h5 class="services__bottom__card--heading">
+                     Graphic Design
+                  </h5>
+                  <p class="services__bottom__card--paragraph">
+                     Lorem ipsum. Delectus deleniti debitis non nesciunt officia, amet earum numquam exercitationem obcaecati optio.
+                  </p>
+               </div>
+
+               <div class="services__bottom__card">
+                  <div class="services__bottom__card--img">
+                     <img src="img/card-3.png" alt="card-3">
+                  </div>
+                  <h5 class="services__bottom__card--heading">
+                     Creative Ideas
+                  </h5>
+                  <p class="services__bottom__card--paragraph">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde consectetur harum ut aut? Unde ducimus perspiciatis quas quos iste non.
+                  </p>
+               </div>
+
+            </div>
+            <button class="button button--primary"><a href="#" class="button__link">Know More</a></button>
+         </div>
+      </section>
+
+
+      <!-- Using BEM from Now On -->
+
+      <section class="our-work">
+
+         <div class="our-work__container">
+
+            <h3 class="our-work__heading">Our Creative Work</h3>
+
+            <p class="our-work__paragraph">Lorem Ipsum in dicta numquam voluptatum ipsam aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda a ullam, obcaecati perspiciatis, quod temporibus eligendi ex inventore velit cum deserunt unde reprehenderit odio hic non quibusdam ab fugiat sit? Eos debitis, error voluptatibus, perferendis minus iure tempore impedit modi nostrum eveniet illum, reprehenderit dolor veniam aliquid itaque r Lorem ipsum dolor sit amet.</p>
+
+            <div class="our-work__grid">
+
+               <div class="grid__image">
+                  <img src="img/grid-img-1.png" alt="img-1">
+               </div>
+
+               <div class="grid__image">
+                  <img src="img/grid-img-2.png" alt="img-2">
+               </div>
+
+               <div class="grid__image">
+                  <img src="img/grid-img-3.png" alt="img-3">
+               </div>
+
+               <div class="grid__image">
+                  <img src="img/grid-img-4.png" alt="img-4">
+               </div>
+
+               <div class="grid__image">
+                  <img src="img/grid-img-5.png" alt="img-5">
+               </div>
+
+               <div class="grid__image">
+                  <img src="img/grid-img-6.png" alt="img-6">
+               </div>
+
+               <div class="grid__image">
+                  <img src="img/grid-img-7.png" alt="img-7">
+               </div>
+
+               <div class="grid__image">
+                  <img src="img/grid-img-8.png" alt="img-8">
+               </div>
+
+               <div class="grid__image">
+                  <img src="img/grid-img-9.png" alt="img-9">
+               </div>
+               
+            </div>
+            
+            <button class="button button--secondary"><a href="#" class="button__link">Know More</a></button>
+
+         </div>
+      </section>
+
+      <section class="logos">
+
+         <div class="logos__img">
+            <img src="img/logos/logo1.png" alt="logo-1">
+         </div>
+
+         <div class="logos__img">
+            <img src="img/logos/logo2.png" alt="logo-2">
+         </div>
+
+         <div class="logos__img">
+            <img src="img/logos/logo3.png" alt="logo-3">
+         </div>
+
+         <div class="logos__img">
+            <img src="img/logos/logo4.png" alt="logo-4">
+         </div>
+
+         <div class="logos__img">
+            <img src="img/logos/logo5.png" alt="logo-5">
+         </div>
+
+      </section>
+
+      <section class="reviews">
+
+         <div class="reviews__container">
+            <h3 class="reviews__heading">Our User's Review</h3>
+
+         <p class="reviews__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores vero amet ea velit repellat!  placeat doloremque illo sapiente velit. Unde dignissimos incidunt cum aperiam. Accusantium eum soluta error similique odio aperiam dolorum illo nostrum? Sint, vero? Ipsa, deleniti excepturi.</p>
+
+         <div class="reviews__card-container">
+
+            <div class="card">               
+               <span class="card__double-quote"></span>
+
+               <div class="card__top">
+                  <div class="card__img">
+                     <img src="img/profile.png" alt="person">
+                  </div>
+
+                  <div class="card__type">
+                     <h6 class="card__name">Furqan Masood</h6>
+                     <span class="card__profession">Web Developer</span>
+                  </div>
+               </div>
+
+               <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem Ipsum dollar Pound love Development harum, dolores nesteru! Repudiandae ipsum officiis, eligendi cume vero quas. Voluptatum incidunt sequi.</p>
+
+               <div class="card__rating">
+                  <svg>
+                     <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+                  <svg>
+                     <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+                  <svg>
+                     <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+                  <svg>
+                     <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+                  <svg class="card__rating--unfilled-star">
+                     <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+               </div>
+            </div>
+
+            <div class="card">     
+               <span class="card__double-quote"></span>
+
+               <div class="card__top">
+                  <div class="card__img">
+                     <img src="img/profile.png" alt="person">
+                  </div>
+
+                  <div class="card__type">
+                     <h6 class="card__name">Furqan Masood</h6>
+                     <span class="card__profession">Web Developer</span>
+                  </div>
+               </div>
+
+               <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem Ipsum dollar Pound love Development harum, dolores nesteru! Repudiandae ipsum officiis, eligendi cume vero quas. Voluptatum incidunt sequi.</p>
+
+               <div class="card__rating">
+                  <svg>
+                     <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+                  <svg>
+                     <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+                  <svg>
+                     <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+                  <svg>
+                     <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+                  <svg class="card__rating--unfilled-star">
+                     <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+               </div>
+            </div>
+
+            <div class="card">
+               <span class="card__double-quote"></span>
+
+               <div class="card__top">
+                  <div class="card__img">
+                     <img src="img/profile.png" alt="person">
+                  </div>
+
+                  <div class="card__type">
+                     <h6 class="card__name">Furqan Masood</h6>
+                     <span class="card__profession">Web Developer</span>
+                  </div>
+               </div>
+
+               <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem Ipsum dollar Pound love Development harum, dolores nesteru! Repudiandae ipsum officiis, eligendi cume vero quas. Voluptatum incidunt sequi.</p>
+
+               <div class="card__rating">
+                  <svg>
+                     <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+                  <svg>
+                     <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+                  <svg>
+                     <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+                  <svg>
+                     <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+                  <svg class="card__rating--unfilled-star">
+                     <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                  </svg>
+               </div>
+            </div>
+         </div>
+         
+         <button class="button button--primary"><a href="#" class="button__link">Know More</a></button>
+      
+      </section>
+
+      <section class="contact">
+         <div class="contact__container">
+
+            <h3 class="contact__heading">Get In Touch</h3>
+
+            <div class="contact__body">
+               <div class="contact__details">
+
+                  <div class="contact__item">
+                     <h6 class="contact__type">Address</h6>
+                     <p class="contact__value">123, Main Street, Your City, New York <br>USA 123456</p>
+                  </div>
+
+                  <div class="contact__item">
+                     <h6 class="contact__type">Call Us:</h6>
+                     <p class="contact__value">+123 4657 890</p>
+                     <p class="contact__value">+456 7890 123</p>
+                  </div>
+
+                  <div class="contact__item">
+                     <h6 class="contact__type">Email:</h6>
+                     <p class="contact__value">bhatfurqan@gmail.com</p>
+                  </div>
+
+               </div>
+   
+               <div class="contact__form">
+                  <form action="#">
+                     <div class="form__group">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Email">
+                     </div>
+
+                     <div class="form__group">
+                        <input type="text" placeholder="Subject">
+                        <input type="text" placeholder="Phone">
+                     </div>
+
+                     <div class="form__group">
+                        <textarea placeholder="Message" cols="30" rows="10"></textarea>
+                     </div>
+
+                     <div class="form__group">
+                        <button class="button button--secondary"><a href="#" class="button__link">Submit</a></button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+      <section class="sub-footer">
+         <div class="sub-footer__container">
+
+            <div class="sub-footer__description">
+               <figure class="sub-footer__logo">
+                  <img src="img/logo.png" alt="logo">
+               </figure>
+
+               <p class="sub-footer__paragraph">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit veritatis eligendi natus sunt iusto autem odio cupiditate aut id! Error doloribus, a enim mollitia fuga, tempore reiciendis rerum ipsum expedita, commodi dolore eligendi itaque molestias fugit! Nulla dolores praesentium in.
+               </p>
+            </div>
+
+            <div class="sub-footer__link">
+               <span class="sub-footer__heading">Pages</span>
+               <ul>
+                  <li class="sub-footer__items"><a href="#">How to work</a></li>
+                  <li class="sub-footer__items"><a href="#">About us</a></li>
+                  <li class="sub-footer__items"><a href="#">Contact us</a></li>
+                  <li class="sub-footer__items"><a href="#">Media</a></li>
+               </ul>
+            </div>
+
+            <div class="sub-footer__link">
+               <span class="sub-footer__heading">Service</span>
+               <ul>
+                  <li class="sub-footer__items"><a href="#">How to work</a></li>
+                  <li class="sub-footer__items"><a href="#">About us</a></li>
+                  <li class="sub-footer__items"><a href="#">Contact us</a></li>
+                  <li class="sub-footer__items"><a href="#">Media</a></li>
+               </ul>
+            </div>
+
+            <div class="sub-footer__link sub-footer__link--logos">
+               <span class="sub-footer__heading">Follow Us On</span>
+               <ul>
+                  <li class="sub-footer__items">
+                     <svg>
+                        <use xlink:href="img/sprite.svg#icon-google-plus"></use>
+                     </svg>
+                  </li>
+                  <li class="sub-footer__items">
+                     <svg>
+                        <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+                     </svg>
+                  </li>
+                  <li class="sub-footer__items">
+                     <svg>
+                        <use xlink:href="img/sprite.svg#icon-vimeo"></use>
+                     </svg>
+                  </li>
+                  <li class="sub-footer__items">
+                     <svg>
+                        <use xlink:href="img/sprite.svg#icon-facebook2"></use>
+                     </svg>
+                  </li>
+                  <li class="sub-footer__items">
+                     <svg>
+                        <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                     </svg>
+                  </li>
+                  <li class="sub-footer__items">
+                     <svg>
+                        <use xlink:href="img/sprite.svg#icon-rss"></use>
+                     </svg>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </section>
+
+      <footer class="footer">
+         <p>&copy;Copyright by Furqan Masood. Design by psdfreebies.com</p>
+      </footer>
+   
+
+   </body>
+
+   <script src="script.js"></script> 
+</html>

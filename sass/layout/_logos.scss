@@ -1,0 +1,33 @@
+.logos {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 10rem 0;
+   background-image: url('../img/Bar.png');
+
+   &__img {
+      
+      width: 10rem;
+
+      @media only screen and (max-width: $bp-large) {
+         width: 6rem;
+      }
+      
+      &:not(:last-child) {
+         margin-right: 10rem;
+
+         @media only screen and (max-width: $bp-large) {
+            margin-right: 5rem;
+         }
+
+         @media only screen and (max-width: $bp-small) {
+            margin-right: 2rem;
+         }
+      }
+
+      & img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+}

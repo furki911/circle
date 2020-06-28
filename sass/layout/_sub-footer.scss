@@ -1,0 +1,149 @@
+.sub-footer {
+
+   background: url('../img/Bar.png');
+   
+
+   &__container {
+      @include container;
+      color: $color-white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10rem 0;
+
+      @media only screen and (max-width: $bp-large) {
+         flex-wrap: wrap;
+      }
+      
+      
+      & > * {
+         flex-basis: 25%;
+
+         @media only screen and (max-width: $bp-largest) {
+            flex-basis: 18%;
+         }
+
+         @media only screen and (max-width: $bp-large) {
+            flex-basis: 28%;
+         }
+
+         @media only screen and (max-width: $bp-medium) {
+            flex-basis: 24%;
+         }         
+
+         @media only screen and (max-width: $bp-small) {
+            flex-basis: 80%;
+         }
+
+         &:not(:last-child) {
+            margin-right: 4rem;
+
+            @media only screen and (max-width: $bp-largest) {
+               margin-right: 2rem;
+            }
+         }
+
+         &:first-child {
+            @media only screen and (max-width: $bp-large) {
+               flex-basis: 80%;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+            }
+         }         
+      }
+   }
+
+   &__description {
+      margin-right: 6rem !important;
+      
+      @media only screen and (max-width: $bp-small) {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin-right: 0 !important;
+      }
+   }
+
+   &__logo {
+      background-color: $color-white;
+      width: 50%;
+      margin: 2rem 0;
+
+      @media only screen and (max-width: $bp-large) {
+         width: 100%;
+         margin: 2rem;
+      }
+
+      
+      @media only screen and (max-width: $bp-small) {
+         width: 60%;
+      }
+
+      
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+
+   &__paragraph {
+      font-size: 1.4rem;
+      color: $color-grey-light-1;
+   }
+
+   &__link {
+      width: 30%;
+      padding: 5rem;
+      align-self: baseline;
+
+      @media only screen and (max-width: $bp-largest) {
+         padding: 5rem 3rem;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+         padding: 5rem 1rem;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+         text-align: center;
+      }
+
+      &--logos ul {
+         display: flex;
+         justify-content: center;
+
+         svg {
+            fill: $color-primary;
+            height: 2.5rem;
+            width: 2.5rem;
+            margin-right: 1rem;
+         }
+      }
+   }
+
+   &__heading {
+      display: block;
+      font-weight: 600;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      margin-bottom: 2.5rem;
+   }
+
+   &__items {
+      list-style: none;
+      margin: 1rem 0;
+
+      a {
+         text-decoration: none;
+         color: currentColor;
+         font-size: 1.6rem;
+         transition: all .5s;
+
+         &:hover {
+            color: $color-primary;
+         }
+      }
+   }
+}

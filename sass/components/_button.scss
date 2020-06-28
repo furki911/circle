@@ -1,0 +1,47 @@
+.button {
+   padding: 1rem 2.75rem;
+   border: none;
+   transform: skewX(15deg);
+   border-radius: .75rem;
+   cursor: pointer;
+   transition: all .3s;
+
+   &__link {
+      text-decoration: none;
+      text-transform: uppercase;
+      transform: skewX(-15deg);
+      display: block;
+      font-weight: 900;
+      font-size: 1.6rem;
+      letter-spacing: -.1rem;
+      font-family: inherit;
+   }
+
+   &--primary {
+      background-color: $color-primary;
+
+      // Button Text Color
+      a {
+         color: #000;
+      }
+
+      &:hover, &:focus {
+         background-color: $color-primary-light;
+         outline: none;
+      }
+   }
+
+   &--secondary {
+      background-color: #000;
+
+      // Button Text Color
+      a {
+         color: $color-white !important;
+      }
+
+      &:focus {
+         outline: none;
+      }
+   }
+}
+ 

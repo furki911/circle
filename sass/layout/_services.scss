@@ -1,0 +1,146 @@
+.services {
+   
+   &__top {
+      padding: 15rem 0;
+      background-image: url('../img/Bar.png');
+      color: $color-white;
+      text-align: center;
+      padding-bottom: 20rem;
+
+      @media only screen and (max-width: $bp-largest) {
+         padding: 12rem 0;
+      }
+
+      @media only screen and (max-width: $bp-big) {
+         padding: 4rem 0;
+      }
+   }
+
+   &__heading {
+      text-transform: uppercase;
+      letter-spacing: -.5rem;
+      margin: 2rem 0;
+
+      span {
+         color: $color-primary;
+      }
+   }
+
+   &__paragraph {
+      font-size: 1.6rem;
+      margin: 5rem auto;
+      width: 60%;
+      color: $color-grey-dark-1;
+
+      @media only screen and (max-width: $bp-big) {
+         width: 80%;
+      }
+   }
+
+   &__bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url('../img/Bar-2.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: $color-white;
+      padding-bottom: 4rem;
+
+      @media only screen and (max-width: $bp-big) {
+         padding: 4rem;
+      }
+      
+      &__container {
+         transform: translateY(-35%);
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+         @include container;
+         text-align: center;
+
+         @media only screen and (max-width: $bp-larger) {
+            flex-wrap: nowrap;
+            align-items: flex-start;
+         }
+
+         @media only screen and (max-width: $bp-big) {
+            transform: translateY(0);
+            flex-wrap: wrap;
+            justify-content: center;
+         }
+
+         & > * {
+            margin: 0 5rem;
+
+            @media only screen and (max-width: $bp-largest) {
+               margin: 0 2rem;
+            }
+         }
+      }
+
+      &__card {
+         text-align: center;
+         flex-basis: 30rem;
+
+         @media only screen and (max-width: $bp-larger) {
+            flex-basis: 25rem;
+         }
+
+         @media only screen and (max-width: $bp-big) {
+            flex-basis: 80%;
+            margin: 2rem 0;
+         }
+
+         &--img {
+            width: 30rem;
+            height: 30rem;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1.5rem solid currentColor;
+
+            
+         @media only screen and (max-width: $bp-largest) {
+            width: 20rem;
+            height: 20rem;
+            margin: 0 auto;
+         }
+
+            img {
+               width: 100%;
+               transform: scale(2) translateY(10%);
+            }
+         }
+
+         &--heading {
+            text-transform: uppercase;
+            margin: 2rem 0;
+         }
+
+         &--paragraph {
+            font-size: 1.4rem;
+            color: $color-grey-light-1;
+
+            @media only screen and (max-width: $bp-big) {
+               width: 60%;
+               margin: 0 auto;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+               width: 100%;
+            }
+         }
+      }
+
+      button {
+         transform: skewX(15deg) translateY(-100%);
+
+         @media only screen and (max-width: $bp-big) {
+            transform: skewX(15deg) translateY(0);
+            margin: 4rem 0;
+         }
+      }
+   }
+}

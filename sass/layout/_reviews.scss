@@ -1,0 +1,54 @@
+.reviews {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding: 8rem 10rem;
+   background: url('../img/Bar-2.png') no-repeat center center/ cover;
+   color: $color-white;
+
+   @media only screen and (max-width: $bp-largest) {
+      padding: 8rem 6rem;
+   }
+
+   @media only screen and (max-width: $bp-small) {
+      padding: 8rem 0;
+   }
+
+   &__container {
+      @include container;
+   }
+
+   &__heading {
+      text-transform: uppercase;
+      font-weight: 900;
+      letter-spacing: -.5rem;
+   }
+
+   &__paragraph {
+      width: 80%;
+      font-size: 1.4rem;
+      color: $color-grey-light-1;
+      font-weight: 400;
+      line-height: 1.6;
+      margin: 3rem auto;
+   }
+
+   &__card-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 5rem 0;
+      flex-wrap: wrap;
+      
+      @media only screen and (max-width: $bp-larger) {
+         flex-wrap: nowrap;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+   }
+}
