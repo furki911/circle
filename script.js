@@ -35,7 +35,7 @@ function clicked() {
 
 (clicked)();
 
-function setAtt(check) {
+function setAtt() {
 
    if (!boolean) {
       btn.setAttribute('name', 'active');

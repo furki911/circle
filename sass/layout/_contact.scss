@@ -18,7 +18,7 @@
    &__body {
       display: flex;
 
-      @media only screen and (max-width: $bp-large) {
+      @media only screen and (max-width: $bp-larger) {
          flex-direction: column;
       }
    }
@@ -57,7 +57,7 @@
    &__form {
       flex-basis: 50%;
 
-      @media only screen and (max-width: $bp-large) {
+      @media only screen and (max-width: $bp-larger) {
          padding: 5rem 10rem;
       }
 
@@ -70,7 +70,7 @@
       }
 
       form {
-         @media only screen and (max-width: $bp-large) {
+         @media only screen and (max-width: $bp-larger) {
             padding: 5rem;
             border-top: 3px dotted $color-white;
          }

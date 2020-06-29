@@ -28,6 +28,12 @@ h2 {
 
 h3 {
   font-size: 6rem; }
+  @media only screen and (max-width: 43.75em) {
+    h3 {
+      font-size: 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    h3 {
+      font-size: 4rem; } }
 
 h4 {
   font-size: 4rem; }
@@ -286,6 +292,9 @@ input {
 
 .showcase {
   height: 89vh; }
+  @media only screen and (max-width: 43.75em) {
+    .showcase {
+      height: 50vh; } }
 
 .showSlide {
   display: none;
@@ -556,7 +565,7 @@ input {
     font-weight: 900; }
   .contact__body {
     display: flex; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 62.5em) {
       .contact__body {
         flex-direction: column; } }
   .contact__details {
@@ -581,7 +590,7 @@ input {
     line-height: 1.2; }
   .contact__form {
     flex-basis: 50%; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 62.5em) {
       .contact__form {
         padding: 5rem 10rem; } }
     @media only screen and (max-width: 37.5em) {
@@ -590,7 +599,7 @@ input {
     @media only screen and (max-width: 25em) {
       .contact__form {
         padding: 5rem 2rem; } }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 62.5em) {
       .contact__form form {
         padding: 5rem;
         border-top: 3px dotted #ffffff; } }
@@ -751,3 +760,11 @@ input {
     text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: 900; }
+    @media only screen and (max-width: 37.5em) {
+      .footer p {
+        font-size: 1rem;
+        font-weight: 700; } }
+    @media only screen and (max-width: 25em) {
+      .footer p {
+        font-weight: 400;
+        font-size: .8rem; } }
