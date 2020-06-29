@@ -86,14 +86,14 @@
       display: flex;
       justify-content: space-between;
 
-      @media only screen and (max-width: $bp-large) {
+      @media only screen and (max-width: $bp-larger) {
          flex-direction: column;
       }   
       
       &:not(:first-child) {
          margin: 2rem 0;  
 
-         @media only screen and (max-width: $bp-large) {
+         @media only screen and (max-width: $bp-larger) {
             flex-direction: column;
             margin: 0;
          }   
@@ -114,7 +114,7 @@
          border-radius: 2rem;
          padding: 1.5rem 2rem;
 
-         @media only screen and (max-width: $bp-large) {
+         @media only screen and (max-width: $bp-larger) {
             margin-bottom: 2rem;
          }
       }
@@ -126,7 +126,7 @@
          border: 3px solid $color-primary;
          font-size: 1.4rem;
          font-weight: 600;
-         @media only screen and (max-width: $bp-large) {
+         @media only screen and (max-width: $bp-larger) {
             margin: 1rem 0;
          }
          
@@ -137,7 +137,7 @@
       }
 
       button {
-         @media only screen and (max-width: $bp-large) {
+         @media only screen and (max-width: $bp-larger) {
             align-self: center;
          }
       }
