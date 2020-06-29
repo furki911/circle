@@ -609,12 +609,12 @@ input {
   .contact .form__group {
     display: flex;
     justify-content: space-between; }
-    @media only screen and (max-width: 43.75em) {
+    @media only screen and (max-width: 56.25em) {
       .contact .form__group {
         flex-direction: column; } }
     .contact .form__group:not(:first-child) {
       margin: 2rem 0; }
-      @media only screen and (max-width: 43.75em) {
+      @media only screen and (max-width: 56.25em) {
         .contact .form__group:not(:first-child) {
           flex-direction: column;
           margin: 0; } }
@@ -630,7 +630,7 @@ input {
       resize: none;
       border-radius: 2rem;
       padding: 1.5rem 2rem; }
-      @media only screen and (max-width: 43.75em) {
+      @media only screen and (max-width: 56.25em) {
         .contact .form__group textarea {
           margin-bottom: 2rem; } }
     .contact .form__group input, .contact .form__group textarea {
@@ -640,13 +640,13 @@ input {
       border: 3px solid #f8e530;
       font-size: 1.4rem;
       font-weight: 600; }
-      @media only screen and (max-width: 43.75em) {
+      @media only screen and (max-width: 56.25em) {
         .contact .form__group input, .contact .form__group textarea {
           margin: 1rem 0; } }
       .contact .form__group input:focus, .contact .form__group textarea:focus {
         border: 3px solid #fff;
         outline: none; }
-    @media only screen and (max-width: 43.75em) {
+    @media only screen and (max-width: 56.25em) {
       .contact .form__group button {
         align-self: center; } }
 
